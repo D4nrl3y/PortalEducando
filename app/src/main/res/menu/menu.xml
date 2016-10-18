@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/contatenos"
+        android:icon="@drawable/email"
+        android:title="@string/contatenos"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/quiz"
+        android:icon="@drawable/jogo"
+        android:title="@string/quiz"
+        app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/config"
+        app:showAsAction="always"
+        android:title="@string/configuracao">
+        <menu>
+            <item android:id="@+id/perfil"
+                android:icon="@drawable/user"
+                 android:title="@string/peril"
+                />
+            <item android:id="@+id/sobre"
+                android:icon="@drawable/sobre"
+                android:title="@string/sobre"
+                />
+            <item android:icon="@drawable/ajuda"
+                android:id="@+id/ajuda"
+                android:title="@string/ajuda"/>
+            <item android:id="@+id/sair"
+                android:icon="@drawable/sair"
+                android:title="@string/sair"
+                />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Portal Educando</string>
+    <string name="sub_titulo">Edu. de Qualidade</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="info_conectado">Permanecer Conectado</string>
+    <string name="hint_login">portaleducando@email.com</string>
+    <string name="sair">Sair</string>
+    <string name="peril">Perfil</string>
+    <string name="sobre">Sobre</string>
+    <string name="configuracao">Configuração</string>
+    <string name="ajuda">Ajuda</string>
+    <string name="quiz">Quiz</string>
+    <string name="contatenos">Contatenos</string>
+    <string-array name="tipo_acesso">
+        <item>Aluno</item>
+        <item>Professor</item>
+        <item>Responsavel</item>
+    </string-array>
+    <string name="title_activity_teste">Teste</string>
+
+    <string name="title_activity_sobre">Sobre</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_perfil">Perfil</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+</resources>
