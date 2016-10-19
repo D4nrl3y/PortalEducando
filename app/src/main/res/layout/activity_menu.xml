@@ -22,14 +22,6 @@
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:layout_marginTop="185dp"
-        android:layout_marginLeft="118dp"
-        android:src="@drawable/medico"
-        android:id="@+id/botaomedico"
-        />
-    <ImageButton
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="185dp"
         android:layout_marginLeft="235dp"
         android:src="@drawable/acompedu"
         android:id="@+id/botaoescolar"/>
@@ -130,5 +122,14 @@
         android:textStyle="bold"
         android:textColor="#08213A"
         />
+
+    <ImageButton
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/medico"
+        android:id="@+id/botaomedico"
+        android:layout_alignTop="@+id/botaoescolar"
+        android:layout_alignLeft="@+id/botaodiario"
+        android:layout_alignStart="@+id/botaodiario" />
 
 </RelativeLayout>

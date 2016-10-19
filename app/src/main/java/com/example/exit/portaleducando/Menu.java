@@ -27,10 +27,56 @@ public class Menu extends AppCompatActivity {
         actionBar.show();
 
         ImageButton botaoescolar = (ImageButton) findViewById(R.id.botaoescolar);
+        ImageButton botaoalimentar = (ImageButton) findViewById(R.id.botaoalimentar);
+        ImageButton botaomedico = (ImageButton) findViewById(R.id.botaomedico);
+        ImageButton botaolocalizacao = (ImageButton) findViewById(R.id.botaolocalizacao);
+        ImageButton botaodiario = (ImageButton) findViewById(R.id.botaodiario);
+        ImageButton botaohorario = (ImageButton) findViewById(R.id.botaohorario);
+
+        botaoalimentar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Menu.this, Nutricional.class);
+                startActivity(it);
+            }
+        });
+
+        botaomedico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Menu.this, AcompMedico.class);
+                startActivity(it);
+            }
+        });
+
         botaoescolar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(Menu.this, AcompEscolar.class);
+                startActivity(it);
+            }
+        });
+
+        botaolocalizacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Menu.this, Localizacao.class);
+                startActivity(it);
+            }
+        });
+
+        botaodiario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Menu.this, Diario.class);
+                startActivity(it);
+            }
+        });
+
+        botaohorario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Menu.this, Horario.class);
                 startActivity(it);
             }
         });
