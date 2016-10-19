@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_acomp_escolar"
     android:layout_width="match_parent"
@@ -18,13 +19,24 @@
        android:layout_height="35dp" />
 
     <ImageButton
-    android:layout_width="107dp"
-    android:layout_height="35dp"
+        android:layout_width="107dp"
+        android:layout_height="35dp"
         android:src="@drawable/iconpizza"
-    android:id="@+id/selecpizza"
+        android:id="@+id/selecpizza"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="37dp"
         android:layout_marginEnd="37dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/selecbarra"
+        android:id="@+id/container">
+
+    </LinearLayout>
+
 </RelativeLayout>

@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 public class Menu extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,60 +24,16 @@ public class Menu extends AppCompatActivity {
         actionBar.setSubtitle(R.string.sub_titulo);
         actionBar.setDisplayHomeAsUpEnabled(false);
         actionBar.setDisplayShowTitleEnabled(true);
-
         actionBar.show();
 
-
-
-
-        ImageButton botaon = (ImageButton) findViewById(R.id.botaoalimentar);
-        botaon.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intetnutricional = new Intent (Menu.this,Horario.class);
-                startActivity(intetnutricional);
-            }
-        });
-
-        ImageButton botaoh = (ImageButton) findViewById(R.id.botaohorario);
-        botaoh.setOnClickListener(new View.OnClickListener(){
-            public  void onClick(View view){
-                Intent intent = new Intent(Menu.this,Horario.class);
-                startActivity(intent);
-            }
-        });
-        ImageButton botaoMedico = (ImageButton) findViewById(R.id.botaom);
-        botaoMedico.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intentmedico = new Intent(Menu.this,AcompMedico.class);
-                startActivity(intentmedico);
-            }
-        });
-        ImageButton botaoEscolar = (ImageButton) findViewById(R.id.botaoacompedu);
-        botaoEscolar.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intentescolar = new Intent(Menu.this,AcompEscolar.class);
-                startActivity(intentescolar);
-            }
-        });
-        ImageButton botaoDiario = (ImageButton) findViewById(R.id.botaodiario);
-        botaoDiario.setOnClickListener(new View.OnClickListener() {
+        ImageButton botaoescolar = (ImageButton) findViewById(R.id.botaoescolar);
+        botaoescolar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intentdiario = new Intent (Menu.this,Diario.class);
-                startActivity(intentdiario);
+            public void onClick(View v) {
+                Intent it = new Intent(Menu.this, AcompEscolar.class);
+                startActivity(it);
             }
         });
-        ImageButton botaoLocal = (ImageButton) findViewById(R.id.botaolocalizacao);
-        botaoLocal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentlocalizacao = new Intent(Menu.this,Localizacao.class);
-                startActivity(intentlocalizacao);
-            }
-        });
-
-
-
     }
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {

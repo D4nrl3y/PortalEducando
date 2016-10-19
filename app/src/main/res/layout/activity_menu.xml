@@ -24,7 +24,7 @@
         android:layout_marginTop="185dp"
         android:layout_marginLeft="118dp"
         android:src="@drawable/medico"
-        android:id="@+id/botaom"
+        android:id="@+id/botaomedico"
         />
     <ImageButton
         android:layout_width="96dp"
@@ -32,7 +32,7 @@
         android:layout_marginTop="185dp"
         android:layout_marginLeft="235dp"
         android:src="@drawable/acompedu"
-        android:id="@+id/botaoacompedu"/>
+        android:id="@+id/botaoescolar"/>
     <TextView
         android:layout_width="100dp"
         android:layout_height="23dp"
