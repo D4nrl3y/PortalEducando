@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_acomp_escolar"
@@ -9,34 +9,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.exit.portaleducando.AcompEscolar">
+    tools:context="com.example.exit.portaleducando.AcompEscolar"
+    android:orientation="vertical"
+    android:weightSum="1">
 
-   <ImageButton
-       android:layout_width="107dp"
-       android:layout_marginLeft="30dp"
-       android:src="@drawable/iconbarra"
-       android:id="@+id/selecbarra"
-       android:layout_height="35dp" />
-
-    <ImageButton
-        android:layout_width="107dp"
-        android:layout_height="35dp"
-        android:src="@drawable/iconpizza"
-        android:id="@+id/selecpizza"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="37dp"
-        android:layout_marginEnd="37dp" />
-
-    <LinearLayout
-        android:orientation="horizontal"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/selecbarra"
-        android:id="@+id/container">
+        android:layout_height="match_parent">
 
-    </LinearLayout>
+        <ImageButton
+            android:layout_width="107dp"
+            android:src="@drawable/iconbarra"
+            android:id="@+id/selecbarra"
+            android:layout_gravity="top|left"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-</RelativeLayout>
+        <ImageButton
+            android:layout_width="107dp"
+            android:layout_height="35dp"
+            android:src="@drawable/iconpizza"
+            android:id="@+id/selecpizza"
+            android:layout_gravity="top|right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/fragmentContainer"
+            android:layout_below="@+id/selecbarra"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

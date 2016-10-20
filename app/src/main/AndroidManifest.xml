@@ -12,7 +12,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginPortalEducando" />
+        <activity android:name=".LoginPortalEducando">
+            <intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
         <activity android:name=".Menu">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
