@@ -15,4 +15,10 @@
         android:textColor="@color/black"
         android:id="@+id/textBarra"
         android:textSize="36sp" />
+
+    <!--<WebView-->
+        <!--android:id="@+id/webview1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="411dp"></WebView>-->
+
 </FrameLayout>
