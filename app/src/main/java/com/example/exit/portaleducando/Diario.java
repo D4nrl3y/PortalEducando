@@ -4,6 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.List;
 
 public class Diario extends AppCompatActivity  {
 
@@ -11,7 +15,16 @@ public class Diario extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diario);
+        String[] materias = new String[]{"Portugues","Matematica","Quimica","Historia","Fisica","Biologia"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,materias);
+        ListView lv = (ListView) findViewById(R.id.listamateria);
+        lv.setAdapter(adapter);
 
+
+    }
+    public  class Materia{
+        String nome;
+        String estadoAtual;
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
