@@ -46,7 +46,7 @@ public class AcompEscolar extends AppCompatActivity {
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.loadUrl("http://192.168.0.104:8080/PortalEducando/ViewAluno/desempenho.jsp");
+        webView.loadUrl("+++++++++++++++++++++++++++++++++++++++++http://192.168.43.216:8080/PortalEducando/ViewAluno/graficoMobile.jsp");
     }
 
     private class MyBrowser extends WebViewClient {
