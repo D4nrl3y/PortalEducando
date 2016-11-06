@@ -10,12 +10,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.exit.portaleducando.AcompMedico">
 
-    <TextView
-        android:textSize="40dp"
-        android:text="Acomp. Médico"
-        android:layout_width="wrap_content"
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/tab_medico">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager_medico"
+        />
 </RelativeLayout>
