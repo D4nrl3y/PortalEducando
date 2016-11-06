@@ -101,7 +101,8 @@ public class Menu extends AppCompatActivity {
 //            Toast.makeText(this, "chamar o sobre", Toast.LENGTH_SHORT).show();
         }
         else  if (item.getItemId() == R.id.ajuda){
-            Toast.makeText(this, "Tela em desemvolvimento", Toast.LENGTH_SHORT).show();
+               Intent intentajuda = new Intent(Menu.this,AjudaActivity.class);
+               startActivity(intentajuda);
         }
         else if (item.getItemId() == R.id.perfil){
             Intent intentsobre = new Intent(Menu.this,Perfil.class);
