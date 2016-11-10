@@ -83,7 +83,7 @@ public class AjudaActivity extends AppCompatActivity {
         listData.put(listGroup.get(1),auxiliar);
 
         auxiliar = new ArrayList<String>();
-        auxiliar.add("Problemas com o Acompanhamento Nutricional:  " +
+        auxiliar.add("Problemas com o Acompanhamento ModelNutricional:  " +
                 "Favor Entrar em contato com a equipe de suporte. \n" +
                 "Email: portaeducando@gmail.com");
         listData.put(listGroup.get(2),auxiliar);
