@@ -42,12 +42,25 @@ public class AcompEscolar extends AppCompatActivity {
 
     }
 
+
     public void acessoDireto (View v) {
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.loadUrl("http://192.168.43.216:8080/PortalEducando/ViewAluno/graficoMobile.jsp");
+        webView.loadUrl("http://192.168.0.107:8080/PortalEducando/ViewAluno/graficoMobile.jsp");
+
+//        http://192.168.0.104:8080/PortalEducando/login.jsp
+//        http://192.168.0.107:8080/PortalEducando/ViewAluno/graficoMobile.jsp
+
     }
+
+    public void acessoDireto2 (View v) {
+        webView.getSettings().setLoadsImagesAutomatically(true);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        webView.loadUrl("http://192.168.0.107:8080/PortalEducando/ViewAluno/graficoMobile2.jsp");
+    }
+
 
     private class MyBrowser extends WebViewClient {
         public boolean overrideUrlLoading (WebView view, String url){

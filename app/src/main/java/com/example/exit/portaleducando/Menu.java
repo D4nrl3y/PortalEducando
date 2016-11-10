@@ -61,7 +61,7 @@ public class Menu extends AppCompatActivity {
         botaolocalizacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(Menu.this, Localizacao.class);
+                Intent it = new Intent(Menu.this, MapsActivity.class);
                 startActivity(it);
             }
         });

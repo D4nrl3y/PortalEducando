@@ -29,6 +29,7 @@
         android:layout_height="35dp"
         android:src="@drawable/iconpizza"
         android:id="@+id/selecpizza"
+        android:onClick="acessoDireto2"
         android:layout_gravity="top|right"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
