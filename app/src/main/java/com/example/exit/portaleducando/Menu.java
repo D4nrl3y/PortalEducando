@@ -119,6 +119,11 @@ public class Menu extends AppCompatActivity {
                 startActivity(sendIntent);
             }
         }
+        else if(item.getItemId() == R.id.quiz){
+            Intent intentquiz = new Intent(Menu.this,QuizActivity.class);
+            startActivity(intentquiz);
+
+        }
         return super.onOptionsItemSelected(item);
     }
 

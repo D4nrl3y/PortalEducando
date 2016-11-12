@@ -89,7 +89,18 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".QuizActivity"
+            android:parentActivityName=".Menu" />
+        <activity android:name=".Perguntas.PerguntasBiologia" android:parentActivityName=".QuizActivity" />
+        <activity android:name=".Perguntas.PerguntasFisica" android:parentActivityName=".QuizActivity" />
+        <activity android:name=".Perguntas.PerguntasGeografia" android:parentActivityName=".QuizActivity" />
+        <activity android:name=".Perguntas.PerguntasHistoria" android:parentActivityName=".QuizActivity"/>
+        <activity android:name=".Perguntas.PerguntasIngles" android:parentActivityName=".QuizActivity" />
+        <activity android:name=".Perguntas.PerguntasMatematica" android:parentActivityName=".QuizActivity" />
+        <activity android:name=".Perguntas.PerguntasPortugues" android:parentActivityName=".QuizActivity" />
+        <activity android:name=".Perguntas.PerguntasQuimica" android:parentActivityName=".QuizActivity"/>
     </application>
 
 </manifest>

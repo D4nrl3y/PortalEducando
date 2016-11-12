@@ -13,6 +13,7 @@
     <string name="ajuda">Ajuda</string>
     <string name="quiz">Quiz</string>
     <string name="contatenos">Contatenos</string>
+    <string name="nome_aluno">Nome:</string>
     <string-array name="tipo_acesso">
         <item>Aluno</item>
         <item>Professor</item>
@@ -31,7 +32,7 @@
     <string name="start_level">Level 1</string>
     <string name="next_level">Next Level</string>
 
-    <string-array name="title_tab_nutri">
+    <string-array name="title_tab_horarios">
         <item>Seg</item>
         <item>Ter</item>
         <item>Qua</item>
@@ -42,6 +43,11 @@
         <item>Historico</item>
         <item>Medicamentos</item>
         <item>Alimentos</item>
+    </string-array>
+    <string-array name="title_tab_nutri">
+        <item>Proteinas</item>
+        <item>Vegetais</item>
+        <item>Bebidas</item>
     </string-array>
     <!-- -
         This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.

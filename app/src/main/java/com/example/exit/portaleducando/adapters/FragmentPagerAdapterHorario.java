@@ -4,37 +4,38 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.exit.portaleducando.fragments.FragmentNutriDois;
-import com.example.exit.portaleducando.fragments.FragmentNutriTres;
-import com.example.exit.portaleducando.fragments.FragmentNutriUm;
 import com.example.exit.portaleducando.fragments.FragmentSegunda;
 import com.example.exit.portaleducando.fragments.FragmentSexta;
 import com.example.exit.portaleducando.fragments.FragmentTerca;
-import com.example.exit.portaleducando.fragments.FragmentsQuinta;
 import com.example.exit.portaleducando.fragments.FramentsQuarta;
+import com.example.exit.portaleducando.fragments.FragmentsQuinta;
 
 /**
- * Created by EXIT on 06/11/2016.
+ * Created by EXIT on 09/11/2016.
  */
 
-public class FragmentPagerAdapterNutri extends FragmentStatePagerAdapter {
+public class FragmentPagerAdapterHorario extends FragmentStatePagerAdapter{
 
-    private String[] nutriTitleTabs;
+    private String[] horarioTabTitle;
 
-    public FragmentPagerAdapterNutri(FragmentManager fm, String[] nutriTitleTabs) {
+    public FragmentPagerAdapterHorario(FragmentManager fm, String[] horarioTabTitle) {
         super(fm);
-        this.nutriTitleTabs = nutriTitleTabs;
+        this.horarioTabTitle = horarioTabTitle;
     }
 
     @Override
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new FragmentNutriUm();
+                return new FragmentSegunda();
             case 1:
-                return new FragmentNutriDois();
+                return new FragmentTerca();
             case 2:
-                return new FragmentNutriTres();
+                return new FramentsQuarta();
+            case 3:
+                return new FragmentsQuinta();
+            case 4:
+                return new FragmentSexta();
             default:
                 return null;
         }
@@ -42,11 +43,11 @@ public class FragmentPagerAdapterNutri extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return this.nutriTitleTabs.length;
+        return this.horarioTabTitle.length;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return this.nutriTitleTabs[position];
+        return this.horarioTabTitle[position];
     }
 }

@@ -3,9 +3,117 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Dados Historico Medico"
-        android:gravity="center_horizontal|center_vertical"/>
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#08213A"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="2dp"
+        android:text="Dados Pessoais"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/nome_aluno"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="15dp"
+        android:text="Idade:"/>
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="3dp"
+        android:src="@drawable/div"
+        android:layout_marginTop="129dp"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#08213A"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="2dp"
+        android:text="Dados Responsavel:"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginLeft="15dp"
+        android:text="Nome do Pai:"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginLeft="15dp"
+        android:text="Nome do Mãe:"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginLeft="15dp"
+        android:text="Telefone:"/>
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="3dp"
+        android:src="@drawable/div"
+        android:layout_marginTop="224dp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textColor="#08213A"
+        android:textSize="17dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="2dp"
+        android:text="Dados Antendimento Fácil"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginLeft="15dp"
+        android:text="Tipo Sanguinio:"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="271dp"
+        android:layout_marginLeft="15dp"
+        android:text="Cartão S.U.S:"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="15dp"
+        android:text="Empresa Plano de Saúde:"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginLeft="15dp"
+        android:text="Nº Plano de Sáude:"/>
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="3dp"
+        android:src="@drawable/div"
+        android:layout_marginTop="339dp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textColor="#08213A"
+        android:textSize="17dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="2dp"
+        android:text="Útimo atestado apresentado:"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="373dp"
+        android:layout_marginLeft="15dp"
+        android:text="Atestado:"/>
+
 
 </RelativeLayout>
