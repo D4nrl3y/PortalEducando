@@ -49,7 +49,7 @@ public class AcompEscolar extends AppCompatActivity {
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.loadUrl("http://192.168.0.107:8080/PortalEducando/ViewAluno/graficoMobile.jsp");
 
-//        http://192.168.0.104:8080/PortalEducando/login.jsp
+//        http://192.168.0.107:8080/PortalEducando/login.jsp
 //        http://192.168.0.107:8080/PortalEducando/ViewAluno/graficoMobile.jsp
 
     }

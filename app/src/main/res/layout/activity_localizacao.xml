@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_localizacao"
     android:layout_width="match_parent"
@@ -11,11 +12,72 @@
     tools:context="com.example.exit.portaleducando.Localizacao">
 
     <TextView
-        android:text="Localização"
-        android:textSize="50dp"
+        android:text="Encontre-nos!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_centerVertical="true"
+        android:id="@+id/textMaps1"
+        android:layout_below="@+id/imgBtnMaps"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:text="Passeio a fábrica  da Moura!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMaps2"
+        android:layout_below="@+id/imgBtnMaps2"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/maps1"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imgBtnMaps"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:elevation="0dp"
+        android:background="@drawable/cast_abc_scrubber_control_off_mtrl_alpha"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imgBtnMaps2"
+        android:layout_alignStart="@+id/imgBtnMaps2" />
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="match_parent"
+        android:layout_height= "2dp"
+        android:background="@color/cast_expanded_controller_ad_label_background_color"
+        android:layout_below="@+id/textMaps1" />
+
+    <TextView
+        android:text="Passeios e Viagens:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passeio"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/SplitLine_hor1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/maps2"
+        android:id="@+id/imgBtnMaps2"
+        android:background="@drawable/cast_abc_scrubber_control_off_mtrl_alpha"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/passeio"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

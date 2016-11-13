@@ -11,6 +11,8 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+    <uses-library android:name="com.google.android.maps" />
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -93,14 +95,33 @@
         <activity
             android:name=".QuizActivity"
             android:parentActivityName=".Menu" />
-        <activity android:name=".Perguntas.PerguntasBiologia" android:parentActivityName=".QuizActivity" />
-        <activity android:name=".Perguntas.PerguntasFisica" android:parentActivityName=".QuizActivity" />
-        <activity android:name=".Perguntas.PerguntasGeografia" android:parentActivityName=".QuizActivity" />
-        <activity android:name=".Perguntas.PerguntasHistoria" android:parentActivityName=".QuizActivity"/>
-        <activity android:name=".Perguntas.PerguntasIngles" android:parentActivityName=".QuizActivity" />
-        <activity android:name=".Perguntas.PerguntasMatematica" android:parentActivityName=".QuizActivity" />
-        <activity android:name=".Perguntas.PerguntasPortugues" android:parentActivityName=".QuizActivity" />
-        <activity android:name=".Perguntas.PerguntasQuimica" android:parentActivityName=".QuizActivity"/>
+        <activity
+            android:name=".Perguntas.PerguntasBiologia"
+            android:parentActivityName=".QuizActivity" />
+        <activity
+            android:name=".Perguntas.PerguntasFisica"
+            android:parentActivityName=".QuizActivity" />
+        <activity
+            android:name=".Perguntas.PerguntasGeografia"
+            android:parentActivityName=".QuizActivity" />
+        <activity
+            android:name=".Perguntas.PerguntasHistoria"
+            android:parentActivityName=".QuizActivity" />
+        <activity
+            android:name=".Perguntas.PerguntasIngles"
+            android:parentActivityName=".QuizActivity" />
+        <activity
+            android:name=".Perguntas.PerguntasMatematica"
+            android:parentActivityName=".QuizActivity" />
+        <activity
+            android:name=".Perguntas.PerguntasPortugues"
+            android:parentActivityName=".QuizActivity" />
+        <activity
+            android:name=".Perguntas.PerguntasQuimica"
+            android:parentActivityName=".QuizActivity" />
+        <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2"></activity>
     </application>
 
 </manifest>
