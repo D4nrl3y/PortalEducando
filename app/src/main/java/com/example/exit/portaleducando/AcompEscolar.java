@@ -1,6 +1,7 @@
 package com.example.exit.portaleducando;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,11 +14,22 @@ import android.widget.ImageButton;
 public class AcompEscolar extends AppCompatActivity {
     ImageButton selecbarra;
     ImageButton selecpizza;
+
     WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acomp_escolar);
+
+        ImageButton duvidaBtn = (ImageButton) findViewById(R.id.duvidaBtn);
+
+        duvidaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(AcompEscolar.this, Pop.class);
+                startActivity(it);
+            }
+        });
 
         webView = (WebView) findViewById(R.id.webviewGraficos);
         webView.setWebViewClient(new MyBrowser());
@@ -47,10 +59,12 @@ public class AcompEscolar extends AppCompatActivity {
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.loadUrl("http://192.168.0.107:8080/PortalEducando/ViewAluno/graficoMobile.jsp");
+        webView.loadUrl("http://192.168.25.25:8080/PortalEducando/login.jsp");
 
 //        http://192.168.0.107:8080/PortalEducando/login.jsp
 //        http://192.168.0.107:8080/PortalEducando/ViewAluno/graficoMobile.jsp
+//        192.168.25.25
+//        http://172.16.1.35:8080/WebServicePortalEducando/WebContent/graficoMobile.jsp
 
     }
 
@@ -58,7 +72,7 @@ public class AcompEscolar extends AppCompatActivity {
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.loadUrl("http://192.168.0.107:8080/PortalEducando/ViewAluno/graficoMobile2.jsp");
+        webView.loadUrl("http://192.168.25.25:8080/PortalEducando/ViewAluno/graficoMobile2.jsp");
     }
 
 
