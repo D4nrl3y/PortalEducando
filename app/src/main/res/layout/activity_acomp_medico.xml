@@ -16,6 +16,12 @@
         android:id="@+id/tab_medico">
     </android.support.design.widget.TabLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_user"
+        android:textColor="#ffffff"/>
+
     <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"

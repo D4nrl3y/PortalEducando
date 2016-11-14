@@ -28,9 +28,20 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.exit.portaleducando.deserialize.AlunoDes;
+import com.example.exit.portaleducando.model.Aluno;
+import com.example.exit.portaleducando.util.RestManager;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -61,6 +72,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    private RestManager mManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,13 +95,48 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+        mManager = new RestManager();
+
+        //Botão de se logar
+
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-//                attemptLogin();
-                Intent it = new Intent(LoginActivity.this, Menu.class);
-                startActivity(it);
+                String login = mEmailView.getText().toString();
+                String senha = mPasswordView.getText().toString();
+
+                //Fazer a verificação se os campos são vazios
+                if(login.isEmpty() || senha.isEmpty()){
+                    Toast.makeText(getApplicationContext(), "PREENCHA OS CAMPOS",Toast.LENGTH_SHORT).show();
+                } else{
+
+                    Gson gson = new GsonBuilder().registerTypeAdapter(Aluno.class, new AlunoDes()).create();
+                    Call<Aluno> aluno = mManager.getFlowerService(gson).login(login, senha);
+
+                    aluno.enqueue(new Callback<Aluno>() {
+                        @Override
+                        public void onResponse(Call<Aluno> call, Response<Aluno> response) {
+                            if(response.isSuccessful()){
+                                Aluno a = response.body();
+                                if(a != null){
+                                    Intent it = new Intent(LoginActivity.this, Menu.class);
+                                    it.putExtra("aluno", a);
+                                    startActivity(it);
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "USUARIO INEXISTENTE", Toast.LENGTH_SHORT).show();
+                                }
+                            } else{
+                                Toast.makeText(getApplicationContext(), "ERRO RESPONSE: " + response.code(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<Aluno> call, Throwable t) {
+                            Toast.makeText(getApplicationContext(), "ERRO: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
             }
         });
 
@@ -358,6 +405,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = null;
             showProgress(false);
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 }
 

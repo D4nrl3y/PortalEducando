@@ -12,15 +12,20 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.exit.portaleducando.model.Aluno;
+
 public class Menu extends AppCompatActivity {
 
-
-
+    private Aluno aluno;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        Intent intent = getIntent();
+        aluno = (Aluno) intent.getSerializableExtra("aluno");
+
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle(R.string.sub_titulo);
         actionBar.setDisplayHomeAsUpEnabled(false);
@@ -46,6 +51,7 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(Menu.this, AcompMedico.class);
+                it.putExtra("aluno", aluno);
                 startActivity(it);
             }
         });
@@ -106,6 +112,7 @@ public class Menu extends AppCompatActivity {
         }
         else if (item.getItemId() == R.id.perfil){
             Intent intentsobre = new Intent(Menu.this,Perfil.class);
+            intentsobre.putExtra("aluno", aluno);
             startActivity(intentsobre);
         }
         else if(item.getItemId() == R.id.contatenos){
