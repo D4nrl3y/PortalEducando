@@ -11,6 +11,6 @@ public class Config {
     }
 
     public class BaseUrl {
-        public static final String BASE_URL = "http://172.16.1.35:8080/WebServicePortalEducando/portal/";
+        public static final String BASE_URL = "http://192.168.0.7:8080/WebServicePortalEducando/portal/";
     }
 }
