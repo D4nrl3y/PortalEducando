@@ -21,7 +21,7 @@ public class AjudaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ajuda);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Central de Ajuda");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
 

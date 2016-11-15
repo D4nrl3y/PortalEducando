@@ -14,7 +14,7 @@ public class PerguntasHistoria extends AppCompatActivity {
         setContentView(R.layout.activity_perguntas_historia);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Perguntas - História");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
     }

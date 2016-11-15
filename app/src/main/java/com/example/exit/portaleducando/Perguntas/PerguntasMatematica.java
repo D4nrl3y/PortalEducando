@@ -14,7 +14,7 @@ public class PerguntasMatematica extends AppCompatActivity {
         setContentView(R.layout.activity_perguntas_matematica);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Perguntas - Matemática");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
     }

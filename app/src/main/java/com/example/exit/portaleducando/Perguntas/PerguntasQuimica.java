@@ -14,7 +14,7 @@ public class PerguntasQuimica extends AppCompatActivity {
         setContentView(R.layout.activity_perguntas_quimica);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Perguntas - Química");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
     }

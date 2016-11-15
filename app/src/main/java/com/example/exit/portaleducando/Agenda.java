@@ -12,7 +12,7 @@ public class Agenda extends AppCompatActivity {
         setContentView(R.layout.activity_agenda);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Agenda de Contatos");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
     }

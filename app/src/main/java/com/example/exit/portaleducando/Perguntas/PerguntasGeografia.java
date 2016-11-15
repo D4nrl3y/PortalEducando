@@ -14,7 +14,7 @@ public class PerguntasGeografia extends AppCompatActivity {
         setContentView(R.layout.activity_perguntas_geografia);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Perguntas - Geografia");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
     }

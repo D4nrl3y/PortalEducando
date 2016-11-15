@@ -14,7 +14,7 @@ public class PerguntasBiologia extends AppCompatActivity {
         setContentView(R.layout.activity_perguntas_biologia);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Perguntas - Biologia");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
     }

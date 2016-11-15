@@ -14,7 +14,7 @@ public class PerguntasFisica extends AppCompatActivity {
         setContentView(R.layout.activity_perguntas_fisica);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Perguntas - Fisica");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
     }

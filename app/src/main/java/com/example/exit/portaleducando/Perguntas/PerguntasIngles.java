@@ -14,7 +14,7 @@ public class PerguntasIngles extends AppCompatActivity {
         setContentView(R.layout.activity_perguntas_ingles);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle("Perguntas - Inglês");
-        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.show();
     }
