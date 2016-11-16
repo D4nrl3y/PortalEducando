@@ -1,10 +1,13 @@
 package com.example.exit.portaleducando;
 
 import android.content.ClipData;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,11 +15,22 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.exit.portaleducando.deserialize.AlunoDes;
 import com.example.exit.portaleducando.model.Aluno;
+import com.example.exit.portaleducando.util.RestManager;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class Menu extends AppCompatActivity {
 
+    private AlertDialog dialogo;
+
     private Aluno aluno;
+    private RestManager mManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +39,8 @@ public class Menu extends AppCompatActivity {
 
         Intent intent = getIntent();
         aluno = (Aluno) intent.getSerializableExtra("aluno");
+
+        mManager = new RestManager();
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle(R.string.sub_titulo);
@@ -87,7 +103,9 @@ public class Menu extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
     }
+
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -98,8 +116,9 @@ public class Menu extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item){
         if(item.getItemId()== R.id.sair) {
-            finish();
+            alerta_logoff();
             return true;
+
         }
         else if(item.getItemId() == R.id.sobre){
                 Intent intentsobre = new Intent(Menu.this,Sobre.class);
@@ -114,6 +133,11 @@ public class Menu extends AppCompatActivity {
             Intent intentsobre = new Intent(Menu.this,Perfil.class);
             intentsobre.putExtra("aluno", aluno);
             startActivity(intentsobre);
+        }
+        else if (item.getItemId() == R.id.agenda){
+            Intent intentagenda = new Intent(Menu.this,Agenda.class);
+            intentagenda.putExtra("aluno", aluno);
+            startActivity(intentagenda);
         }
         else if(item.getItemId() == R.id.contatenos){
 
@@ -132,6 +156,24 @@ public class Menu extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void alerta_logoff() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Porta Educando");
+        builder.setIcon(R.drawable.sair);
+        builder.setMessage("Deseja Realmente sair do Programa?");
+        builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface arg0, int arg1) {
+             finish();
+            }
+        });
+        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface arg0, int arg1) {
+            }
+        });
+        dialogo = builder.create();
+        dialogo.show();
     }
 
 }

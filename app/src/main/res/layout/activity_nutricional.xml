@@ -10,16 +10,138 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.exit.portaleducando.Nutricional">
 
-    <android.support.design.widget.TabLayout
+    <TextView
+        android:textSize="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tab_nutricao">
-    </android.support.design.widget.TabLayout>
-
-    <android.support.v4.view.ViewPager
+        android:text="Nome:"
+        android:textColor="#08213a"
+        android:textStyle="bold"/>
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/nome_cardapio"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/pager_nutri"
+        android:layout_height="wrap_content"
+        android:text="Cardapio vegetariano"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="02dp"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Data Inicio:"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        />
+    <TextView
+        android:textSize="14dp"
+        android:id="@+id/data_inicio_cardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="85dp"
+        android:text="01/02/2016"
+        />
+    <TextView
+        android:textSize="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Fim:"
+        android:textStyle="bold"/>
+    <TextView
+        android:textSize="14dp"
+        android:id="@+id/data_fim_cardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="37dp"
+        android:text="01/03/2016"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/div"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proteinas:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="85dp"
+        android:textColor="#08213a"/>
+    <TextView
+        android:id="@+id/proteina_cardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="proteinas do cardapio"
+        android:layout_marginTop="125dp"
+        android:textSize="17dp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:src="@drawable/div"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acompanhamento:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="180dp"
+        android:textColor="#08213a"/>
+    <TextView
+        android:id="@+id/acompanhamento_cardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="acompanhamento do cardapio"
+        android:layout_marginTop="225dp"
+        android:textSize="17dp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="265dp"
+        android:src="@drawable/div"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bebidas:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="275dp"
+        android:textColor="#08213a"/>
+    <TextView
+        android:id="@+id/bebidas_cardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vegetais do cardapio"
+        android:layout_marginTop="315dp"
+        android:textSize="17dp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="355dp"
+        android:src="@drawable/div"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frutas:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="375dp"
+        android:textColor="#08213a"/>
+    <TextView
+        android:id="@+id/frutas_cardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frutas do cardapio"
+        android:layout_marginTop="415dp"
+        android:textSize="17dp"
+        android:gravity="center"/>
 
 </RelativeLayout>

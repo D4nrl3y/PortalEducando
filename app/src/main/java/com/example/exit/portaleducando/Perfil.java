@@ -32,6 +32,7 @@ public class Perfil extends AppCompatActivity {
 
         Intent intent = getIntent();
         Aluno aluno = (Aluno) intent.getSerializableExtra("aluno");
+
         if(aluno != null){
             tvNome.setText(aluno.getNome());
             tvSexo.setText(aluno.getSexo());

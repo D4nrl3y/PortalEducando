@@ -24,6 +24,9 @@
             <item android:icon="@drawable/ajuda"
                 android:id="@+id/ajuda"
                 android:title="@string/ajuda"/>
+            <item android:icon="@drawable/agenda"
+                android:id="@+id/agenda"
+                android:title="Agenda"/>
             <item android:id="@+id/sair"
                 android:icon="@drawable/sair"
                 android:title="@string/sair"

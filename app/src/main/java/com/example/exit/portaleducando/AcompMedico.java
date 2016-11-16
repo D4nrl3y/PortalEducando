@@ -33,9 +33,7 @@ public class AcompMedico extends AppCompatActivity {
 
         if(aluno != null){
             int id = aluno.getId();
-
             String id_user = String.valueOf(id);
-
             TextView tv = (TextView) findViewById(R.id.id_user);
             tv.setText(id_user);
         }

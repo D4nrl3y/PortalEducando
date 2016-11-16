@@ -48,6 +48,12 @@
         <activity
             android:name=".Sobre"
             android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Agenda"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".AjudaActivity"
+            android:parentActivityName=".Menu" />
         <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -74,9 +80,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.exit.portaleducando.Menu" />
         </activity>
-        <activity
-            android:name=".AjudaActivity"
-            android:parentActivityName=".Menu" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -91,7 +94,8 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".Menu" />
         <activity
             android:name=".QuizActivity"
             android:parentActivityName=".Menu" />
@@ -121,10 +125,12 @@
             android:parentActivityName=".QuizActivity" />
         <activity
             android:name=".MapsActivity2"
-            android:label="@string/title_activity_maps2"></activity>
-
-        <activity android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme"></activity>
+            android:label="@string/title_activity_maps2" />
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".DadosNotas"
+            android:parentActivityName=".Diario"/>
     </application>
 
 </manifest>

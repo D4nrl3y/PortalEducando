@@ -59,8 +59,9 @@ public class FragmentHistorico extends Fragment {
                         //Dados do aluno
                         TextView tvNome = (TextView) view.findViewById(R.id.nome_aluno_medico);
                         tvNome.setText(a.getNome());
-                        TextView tvIdade = (TextView) view.findViewById(R.id.idade_aluno_medico);
-                        //setar idade
+
+                        TextView tvTel = (TextView) view.findViewById(R.id.telefone_aluno_medico);
+                        tvTel.setText(a.getTelefone());
 
                         //Dados Responsável
                         TextView tvNomeResp = (TextView) view.findViewById(R.id.nome_pai_aluno_medico);
@@ -87,10 +88,16 @@ public class FragmentHistorico extends Fragment {
 
                         TextView tvSus = (TextView) view.findViewById(R.id.sus_aluno_medico);
                         tvSus.setText(hospitalar.getCartao_sus());
+
                         TextView tvEmpPlano = (TextView) view.findViewById(R.id.plano_aluno_medico);
                         tvEmpPlano.setText(hospitalar.getEmpresa());
+
                         TextView tvNumPlano = (TextView) view.findViewById(R.id.numero_plano_aluno_medico);
                         tvNumPlano.setText(hospitalar.getCod_cartao());
+
+                        TextView tvAcess = (TextView) view.findViewById(R.id.acess_aluno);
+                        tvAcess.setText(hospitalar.getAcessibilidade());
+
                         TextView tvAtestado = (TextView) view.findViewById(R.id.atestado_aluno_medico);
                         tvAtestado.setText(hospitalar.getUltimo_atestado());
                     }

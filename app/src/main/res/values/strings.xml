@@ -60,7 +60,7 @@
     <string name="title_activity_login">Portal Educando</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email (Obrigatorio)</string>
+    <string name="prompt_email">Login (Obrigatorio)</string>
     <string name="prompt_password">Senha (Obrigatorio)</string>
     <string name="action_sign_in">Entrar</string>
     <string name="action_sign_in_short">Entrar</string>

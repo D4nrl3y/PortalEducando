@@ -7,10 +7,10 @@ package com.example.exit.portaleducando.util;
 public class Config {
 
     public static final class ipServidor {
-        public static final String BASE_URL = "http://192.168.0.107:8080/WebServicePortalEducando/portal/";
+        public static final String BASE_URL = "http://192.168.0.5:8080/WebServicePortalEducando/portal/";
     }
 
     public class BaseUrl {
-        public static final String BASE_URL = "http://172.16.1.35:8080/WebServicePortalEducando/portal/";
+        public static final String BASE_URL = "http://192.168.0.106:8080/WebServicePortalEducando/portal/";
     }
 }

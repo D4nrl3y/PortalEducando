@@ -17,43 +17,48 @@
         android:layout_marginTop="78dp"
         android:layout_marginLeft="15dp"
         android:text="@string/nome_aluno"/>
+
     <TextView
         android:id="@+id/nome_aluno_medico"
         android:layout_width="130dp"
         android:layout_height="20dp"
         android:layout_marginTop="78dp"
-        android:layout_marginLeft="65dp"/>
+        android:layout_marginLeft="75dp"
+        android:text="Allef Test"/>
+
     <TextView
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="20dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="98dp"
         android:layout_marginLeft="15dp"
-        android:text="Idade:"/>
+        android:text="Telefone:"/>
+
     <TextView
-        android:id="@+id/idade_aluno_medico"
-        android:layout_width="50dp"
+        android:id="@+id/telefone_aluno_medico"
+        android:layout_width="130dp"
         android:layout_height="20dp"
-        android:layout_marginTop="105dp"
-        android:layout_marginLeft="55dp"
-        android:text="17"/>
+        android:layout_marginTop="98dp"
+        android:layout_marginLeft="75dp"
+        android:text="819999"/>
+
     <ImageView
         android:layout_width="420dp"
         android:layout_height="3dp"
         android:src="@drawable/div"
-        android:layout_marginTop="129dp"/>
+        android:layout_marginTop="120dp"/>
     <TextView
         android:layout_width="200dp"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textSize="17dp"
         android:textColor="#08213A"
-        android:layout_marginTop="135dp"
+        android:layout_marginTop="125dp"
         android:layout_marginLeft="2dp"
-        android:text="Dados Responsavel:"/>
+        android:text="Dados Responsável:"/>
     <TextView
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="148dp"
         android:layout_marginLeft="15dp"
         android:text="Nome:"/>
 
@@ -61,35 +66,35 @@
         android:id="@+id/nome_pai_aluno_medico"
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="148dp"
         android:layout_marginLeft="85dp"
         android:text="Joao da silva"/>
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="178dp"
+        android:layout_marginTop="168dp"
         android:layout_marginLeft="15dp"
         android:text="Email:"/>
     <TextView
         android:id="@+id/login_responsavel_aluno_medico"
         android:layout_width="200dp"
         android:layout_height="20dp"
-        android:layout_marginTop="178dp"
+        android:layout_marginTop="168dp"
         android:layout_marginLeft="85dp"
         android:text="Maria da Silva"/>
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="198dp"
+        android:layout_marginTop="188dp"
         android:layout_marginLeft="15dp"
         android:text="Telefone:"/>
     <TextView
         android:id="@+id/tel_aluno_medico"
         android:layout_width="200dp"
         android:layout_height="20dp"
-        android:layout_marginTop="198dp"
+        android:layout_marginTop="188dp"
         android:layout_marginLeft="85dp"
         android:text="9979-7825"/>
 
@@ -97,95 +102,125 @@
         android:layout_width="420dp"
         android:layout_height="3dp"
         android:src="@drawable/div"
-        android:layout_marginTop="224dp"/>
+        android:layout_marginTop="214dp"/>
     <TextView
         android:layout_width="230dp"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textColor="#08213A"
         android:textSize="17dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="220dp"
         android:layout_marginLeft="2dp"
         android:text="Dados Antendimento Fácil"/>
     <TextView
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="242dp"
         android:layout_marginLeft="15dp"
         android:text="Tipo Sanguinio:"/>
     <TextView
         android:id="@+id/tipo_sangue_aluno_medico"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="242dp"
         android:layout_marginLeft="115dp"
         android:text="AB"/>
     <TextView
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="271dp"
+        android:layout_marginTop="261dp"
         android:layout_marginLeft="15dp"
         android:text="Cartão S.U.S:"/>
     <TextView
         android:id="@+id/sus_aluno_medico"
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="271dp"
+        android:layout_marginTop="261dp"
         android:layout_marginLeft="100dp"
         android:text="19191919191"/>
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="280dp"
         android:layout_marginLeft="15dp"
         android:text="Empresa Plano de Saúde:"/>
     <TextView
         android:id="@+id/plano_aluno_medico"
         android:layout_width="200dp"
         android:layout_height="20dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="280dp"
         android:layout_marginLeft="120dp"
         android:text="BRADESCO SAUDE"/>
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="302dp"
         android:layout_marginLeft="15dp"
         android:text="Nº Plano de Sáude:"/>
     <TextView
         android:id="@+id/numero_plano_aluno_medico"
         android:layout_width="200dp"
         android:layout_height="20dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="302dp"
         android:layout_marginLeft="105dp"
         android:text="00000-0000-8888"/>
     <ImageView
         android:layout_width="420dp"
         android:layout_height="3dp"
         android:src="@drawable/div"
-        android:layout_marginTop="339dp"/>
+        android:layout_marginTop="329dp"/>
     <TextView
         android:layout_width="230dp"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textColor="#08213A"
         android:textSize="17dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginLeft="2dp"
+        android:text="Acessibilidade:"/>
+    <TextView
+        android:id="@+id/acess_aluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sim"
+        android:layout_marginTop="346dp"
+        android:layout_marginLeft="125dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo sangue:"
+        android:textColor="#08213A"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="368dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="105dp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textColor="#08213A"
+        android:textSize="17dp"
+        android:layout_marginTop="395dp"
         android:layout_marginLeft="2dp"
         android:text="Útimo atestado apresentado:"/>
     <TextView
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginTop="373dp"
+        android:layout_marginTop="425dp"
         android:layout_marginLeft="15dp"
         android:text="Atestado:"/>
     <TextView
         android:id="@+id/atestado_aluno_medico"
         android:layout_width="200dp"
         android:layout_height="20dp"
-        android:layout_marginTop="373dp"
+        android:layout_marginTop="425dp"
         android:layout_marginLeft="85dp"
         android:text="Ultimo atestado apresentando"/>
 

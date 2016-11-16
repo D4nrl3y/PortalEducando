@@ -1,5 +1,6 @@
 package com.example.exit.portaleducando;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,11 @@ public class AjudaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajuda);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setSubtitle("Central de Ajuda");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.show();
 
         buildList();
 
