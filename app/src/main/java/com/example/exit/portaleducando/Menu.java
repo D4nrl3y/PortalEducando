@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,13 +15,22 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.exit.portaleducando.deserialize.AlunoDes;
 import com.example.exit.portaleducando.model.Aluno;
+import com.example.exit.portaleducando.util.RestManager;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class Menu extends AppCompatActivity {
 
     private AlertDialog dialogo;
 
     private Aluno aluno;
+    private RestManager mManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +39,8 @@ public class Menu extends AppCompatActivity {
 
         Intent intent = getIntent();
         aluno = (Aluno) intent.getSerializableExtra("aluno");
+
+        mManager = new RestManager();
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle(R.string.sub_titulo);
@@ -91,7 +103,9 @@ public class Menu extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
     }
+
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -143,6 +157,7 @@ public class Menu extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     private void alerta_logoff() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Porta Educando");

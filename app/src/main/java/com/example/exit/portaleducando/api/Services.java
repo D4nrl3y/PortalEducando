@@ -1,7 +1,10 @@
 package com.example.exit.portaleducando.api;
 
+import com.example.exit.portaleducando.Nutricional;
 import com.example.exit.portaleducando.model.Aluno;
 import com.example.exit.portaleducando.model.Hospitalar;
+import com.example.exit.portaleducando.model.ModelNutricional;
+import com.example.exit.portaleducando.model.Notas;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -21,4 +24,10 @@ public interface Services {
 
     @GET("procurarHospitalar/{id}")
     Call<Hospitalar> procurarHospitalar(@Path("id") int id);
+
+    @GET("procurarNutricional")
+    Call<ModelNutricional> procurarNutricional();
+
+    @GET("procurarDadosDisciplina/{id}")
+    Call<Notas> procurarDadosDisciplina(@Path("id") int id);
 }

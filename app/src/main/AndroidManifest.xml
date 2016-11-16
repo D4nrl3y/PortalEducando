@@ -26,7 +26,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu"/>
+        <activity android:name=".Menu" />
         <activity
             android:name=".Nutricional"
             android:parentActivityName=".Menu" />
@@ -50,7 +50,7 @@
             android:parentActivityName=".Menu" />
         <activity
             android:name=".Agenda"
-            android:parentActivityName=".Menu"/>
+            android:parentActivityName=".Menu" />
         <activity
             android:name=".AjudaActivity"
             android:parentActivityName=".Menu" />
@@ -95,7 +95,7 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
-            android:parentActivityName=".Menu"/>
+            android:parentActivityName=".Menu" />
         <activity
             android:name=".QuizActivity"
             android:parentActivityName=".Menu" />
@@ -129,7 +129,8 @@
         <activity
             android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme" />
-
+        <activity android:name=".DadosNotas"
+            android:parentActivityName=".Diario"/>
     </application>
 
 </manifest>

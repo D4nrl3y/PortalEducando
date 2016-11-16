@@ -8,7 +8,7 @@
         android:id="@+id/labelAno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2011"
+        android:text="2016"
         android:textSize="22sp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="30dp"/>
@@ -17,7 +17,7 @@
         android:id="@+id/labelMes"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:text="janeiro"
+        android:text="Novembro"
         android:textStyle="bold"
         android:background="#124375"
         android:gravity="center"
@@ -29,7 +29,7 @@
         android:id="@+id/labelNumeroDia"
         android:layout_width="220dp"
         android:layout_height="200dp"
-        android:text="11"
+        android:text="22"
         android:gravity="center"
         android:background="#4169E1"
         android:textColor="#ffffff"
@@ -57,7 +57,7 @@
         android:id="@+id/materia_aula1_terca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Geogracia"
+        android:text="Matemática"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-20dp"/>
     <TextView
@@ -72,7 +72,7 @@
         android:id="@+id/materia_aula2_terca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fisica"
+        android:text="Edu. Fisica"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-18dp"/>
 
@@ -88,7 +88,7 @@
         android:id="@+id/materia_aula3_terca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Historia"
+        android:text="Biologia"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-20dp"/>
     <TextView
@@ -103,7 +103,7 @@
         android:id="@+id/materia_aula4_terca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inglês"
+        android:text="Espanhol"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-18dp"/>
     <TextView

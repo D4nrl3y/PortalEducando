@@ -109,13 +109,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vegetais:"
+        android:text="Bebidas:"
         android:textStyle="bold"
         android:textSize="20dp"
         android:layout_marginTop="275dp"
         android:textColor="#08213a"/>
     <TextView
-        android:id="@+id/vegetais_cardapio"
+        android:id="@+id/bebidas_cardapio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Vegetais do cardapio"

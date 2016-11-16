@@ -17,7 +17,7 @@
         android:id="@+id/labelMes"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:text="janeiro"
+        android:text="Novembro"
         android:textStyle="bold"
         android:background="#124375"
         android:gravity="center"
@@ -29,7 +29,7 @@
         android:id="@+id/labelNumeroDia"
         android:layout_width="220dp"
         android:layout_height="200dp"
-        android:text="14"
+        android:text="25"
         android:gravity="center"
         android:background="#4169E1"
         android:textColor="#ffffff"
@@ -57,7 +57,7 @@
         android:id="@+id/materia_aula1_sexta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Geogracia"
+        android:text="História"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-20dp"/>
     <TextView
@@ -72,7 +72,7 @@
         android:id="@+id/materia_aula2_sexta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fisica"
+        android:text="Informática"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-18dp"/>
 
@@ -88,8 +88,8 @@
         android:id="@+id/materia_aula3_sexta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Historia"
-        android:layout_marginLeft="-75dp"
+        android:text="Empreendedorismo"
+        android:layout_marginLeft="-55dp"
         android:layout_marginTop="-20dp"/>
     <TextView
         android:id="@+id/hora_aula4"
@@ -103,7 +103,7 @@
         android:id="@+id/materia_aula4_sexta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inglês"
+        android:text="Espanhol"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-18dp"/>
     <TextView
@@ -118,7 +118,7 @@
         android:id="@+id/materia_aula5_sexta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Português"
+        android:text="Quimica"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-20dp"/>
 </LinearLayout>

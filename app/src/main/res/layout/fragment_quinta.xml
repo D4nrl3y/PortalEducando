@@ -17,7 +17,7 @@
         android:id="@+id/labelMes"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:text="janeiro"
+        android:text="Novembro"
         android:textStyle="bold"
         android:background="#124375"
         android:gravity="center"
@@ -29,7 +29,7 @@
         android:id="@+id/labelNumeroDia"
         android:layout_width="220dp"
         android:layout_height="200dp"
-        android:text="13"
+        android:text="24"
         android:gravity="center"
         android:background="#4169E1"
         android:textColor="#ffffff"
@@ -57,7 +57,7 @@
         android:id="@+id/materia_aula1_quinta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Geogracia"
+        android:text="Informática"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-20dp"/>
     <TextView
@@ -72,7 +72,7 @@
         android:id="@+id/materia_aula2_quinta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fisica"
+        android:text="Matemática"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-18dp"/>
 
@@ -88,7 +88,7 @@
         android:id="@+id/materia_aula3_quinta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Historia"
+        android:text="História"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-20dp"/>
     <TextView
@@ -103,7 +103,7 @@
         android:id="@+id/materia_aula4_quinta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inglês"
+        android:text="Espanhol"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-18dp"/>
     <TextView
@@ -118,7 +118,7 @@
         android:id="@+id/materia_aula5_quinta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Português"
+        android:text="Artes"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-20dp"/>
 </LinearLayout>

@@ -7,7 +7,7 @@
         android:id="@+id/labelAno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2011"
+        android:text="2016"
         android:textSize="22sp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="30dp"/>
@@ -16,7 +16,7 @@
         android:id="@+id/labelMes"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:text="janeiro"
+        android:text="Novembro"
         android:textStyle="bold"
         android:background="#124375"
         android:gravity="center"
@@ -28,7 +28,7 @@
         android:id="@+id/labelNumeroDia"
         android:layout_width="220dp"
         android:layout_height="200dp"
-        android:text="10"
+        android:text="21"
         android:gravity="center"
         android:background="#4169E1"
         android:textColor="#ffffff"
@@ -56,7 +56,7 @@
         android:id="@+id/materia_aula1_segunda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Geogracia"
+        android:text="Geografia"
         android:layout_marginLeft="-75dp"
         android:layout_marginTop="-20dp"/>
     <TextView

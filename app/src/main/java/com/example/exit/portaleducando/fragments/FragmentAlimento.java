@@ -29,7 +29,6 @@ public class FragmentAlimento extends Fragment {
     private View view;
     private RestManager mManager;
 
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
