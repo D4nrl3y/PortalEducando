@@ -3,6 +3,7 @@ package com.example.exit.portaleducando;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.exit.portaleducando.model.Aluno;
@@ -13,6 +14,8 @@ public class Perfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //DADOS PESSOAIS ALUNO
         TextView tvNome = (TextView) findViewById(R.id.nome_aluno_pefil);
@@ -48,4 +51,15 @@ public class Perfil extends AppCompatActivity {
             tvBairro.setText(aluno.getEndereco().getBairro());
         }
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem){
+        if(menuItem.getItemId() == android.R.id.home){
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(menuItem);
+    }
+
+
 }

@@ -3,6 +3,7 @@ package com.example.exit.portaleducando;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -12,6 +13,8 @@ public class Localizacao extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_localizacao);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ImageButton imgBtnMaps = (ImageButton) findViewById(R.id.imgBtnMaps);
         ImageButton imgBtnMaps2 = (ImageButton) findViewById(R.id.imgBtnMaps2);
@@ -32,4 +35,14 @@ public class Localizacao extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem){
+        if(menuItem.getItemId() == android.R.id.home){
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(menuItem);
+    }
+
 }

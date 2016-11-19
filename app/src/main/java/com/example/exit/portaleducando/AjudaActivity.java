@@ -3,6 +3,7 @@ package com.example.exit.portaleducando;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -26,6 +27,8 @@ public class AjudaActivity extends AppCompatActivity {
         actionBar.show();
 
         buildList();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ExpandableListView expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
         expandableListView.setAdapter( new ExpandableAdapter(AjudaActivity.this,listGroup,listData));
@@ -107,7 +110,15 @@ public class AjudaActivity extends AppCompatActivity {
                 "Favor Entrar em contato com a equipe de suporte. \n" +
                 "Email: portaeducando@gmail.com");
         listData.put(listGroup.get(4),auxiliar);
-
-
     }
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem menuItem){
+            if(menuItem.getItemId() == android.R.id.home){
+                finish();
+                return true;
+            }
+            return super.onOptionsItemSelected(menuItem);
+        }
+
 }

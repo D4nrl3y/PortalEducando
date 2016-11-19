@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.exit.portaleducando.adapters.FragmentPagerAdapterHorario;
@@ -22,6 +23,9 @@ public class Horario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horario);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ActionBar barraHorario = getSupportActionBar();
         barraHorario.setSubtitle("Acomp.Horario de Aula");
         barraHorario.setDisplayHomeAsUpEnabled(true);
@@ -33,26 +37,15 @@ public class Horario extends AppCompatActivity {
         hPagerAdapter.setAdapter(new FragmentPagerAdapterHorario(getSupportFragmentManager(),getResources().getStringArray(R.array.title_tab_horarios)));
         hTabLayout.setupWithViewPager(hPagerAdapter);;
 
-
-//        TextView labelAno = (TextView)findViewById(R.id.labelAno);
-//        TextView labelMes = (TextView)findViewById(R.id.labelMes);
-//        TextView labelNomeDia = (TextView)findViewById(R.id.labelNomeDia);
-//        TextView labelNumeroDia = (TextView)findViewById(R.id.labelNumeroDia);
-//
-//        Calendar cal = Calendar.getInstance();
-//        SimpleDateFormat data = new SimpleDateFormat("yyyy/MMMM/d/E", Locale.getDefault());
-//        String stringData = data.format(cal.getTime());
-//
-//        String[] valores = stringData.split("/",0);
-////CHECAR VALORES DA DATA
-////        for(int i=0; i < valores.length;i++){
-////            Log.v("checar Valor", valores[i]);
-////        }
-//        labelAno.setText(valores[0]);
-//        labelMes.setText(valores[1]);
-//        labelNumeroDia.setText(valores[2]);
-//        labelNomeDia.setText(valores[3]);
-
-
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem){
+        if(menuItem.getItemId() == android.R.id.home){
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(menuItem);
+    }
+
 }
