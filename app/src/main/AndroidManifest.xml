@@ -28,32 +28,23 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Menu" />
         <activity
-            android:name=".Nutricional"
-            android:parentActivityName=".Menu" />
+            android:name=".Nutricional" />
         <activity
-            android:name=".Horario"
-            android:parentActivityName=".Menu" />
+            android:name=".Horario" />
         <activity
-            android:name=".AcompMedico"
-            android:parentActivityName=".Menu" />
+            android:name=".AcompMedico" />
         <activity
-            android:name=".AcompEscolar"
-            android:parentActivityName=".Menu" />
+            android:name=".AcompEscolar" />
         <activity
-            android:name=".Diario"
-            android:parentActivityName=".Menu" />
+            android:name=".Diario" />
         <activity
-            android:name=".Localizacao"
-            android:parentActivityName=".Menu" />
+            android:name=".Localizacao"/>
         <activity
-            android:name=".Sobre"
-            android:parentActivityName=".Menu" />
+            android:name=".Sobre" />
         <activity
-            android:name=".Agenda"
-            android:parentActivityName=".Menu" />
+            android:name=".Agenda"/>
         <activity
-            android:name=".AjudaActivity"
-            android:parentActivityName=".Menu" />
+            android:name=".AjudaActivity" />
         <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -94,11 +85,9 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"
-            android:parentActivityName=".Menu" />
+            android:label="@string/title_activity_maps"/>
         <activity
-            android:name=".QuizActivity"
-            android:parentActivityName=".Menu" />
+            android:name=".QuizActivity" />
         <activity
             android:name=".Perguntas.PerguntasBiologia"
             android:parentActivityName=".QuizActivity" />
@@ -129,8 +118,7 @@
         <activity
             android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme" />
-        <activity android:name=".DadosNotas"
-            android:parentActivityName=".Diario"/>
+        <activity android:name=".DadosNotas"/>
     </application>
 
 </manifest>

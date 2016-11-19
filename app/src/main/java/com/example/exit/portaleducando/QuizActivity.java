@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -26,6 +27,9 @@ public class QuizActivity extends AppCompatActivity {
         barraperfil.show();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         //chama as activitys referente as perguntas do quiz.
         ImageButton botaoportugues = (ImageButton) findViewById(R.id.botaoPortugues);
         ImageButton botaomatematica = (ImageButton) findViewById(R.id.botaoMatematica);
@@ -94,4 +98,14 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
     }
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem menuItem){
+            if(menuItem.getItemId() == android.R.id.home){
+                finish();
+                return true;
+            }
+            return super.onOptionsItemSelected(menuItem);
+        }
+
 }

@@ -27,6 +27,8 @@ import retrofit2.Response;
 
 public class Menu extends AppCompatActivity {
 
+    public final String LOG_APP = "LOG-TESTE";
+
     private AlertDialog dialogo;
 
     private Aluno aluno;
@@ -174,6 +176,43 @@ public class Menu extends AppCompatActivity {
         });
         dialogo = builder.create();
         dialogo.show();
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        Log.i(LOG_APP, getLocalClassName() + ".onStart()");
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Log.i(LOG_APP, getLocalClassName() + ".onResume()");
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.i(LOG_APP, getLocalClassName() + ".onPause()");
+    }
+
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        Log.i(LOG_APP, getLocalClassName() + ".onStop()");
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        Log.i(LOG_APP, getLocalClassName() + ".onRestart()");
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.i(LOG_APP, getLocalClassName() + ".onDestroy()");
     }
 
 }
