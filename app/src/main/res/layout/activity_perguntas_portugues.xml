@@ -10,4 +10,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.exit.portaleducando.Perguntas.PerguntasPortugues">
 
+    <Button
+        android:text="Começar!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPort"
+        android:layout_x="129dp"
+        android:layout_y="213dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textStyle="normal|bold|italic"
+        android:elevation="0dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textAlignment="center" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/webViewQuizPort" />
+
 </RelativeLayout>

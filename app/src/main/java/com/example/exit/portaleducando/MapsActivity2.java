@@ -77,7 +77,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
 
         )
             .width(10)
-                .color(Color.RED)
+                .color(Color.CYAN)
         );
     }
 }

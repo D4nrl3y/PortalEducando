@@ -17,5 +17,5 @@
         android:textAlignment="center"
         android:textStyle="normal|bold|italic"
         android:textAllCaps="true"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="#08213a" />
 </RelativeLayout>
