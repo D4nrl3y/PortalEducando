@@ -33,7 +33,7 @@ public class PerguntasQuimica extends AppCompatActivity {
                 webViewQuizQui.getSettings().setLoadsImagesAutomatically(true);
                 webViewQuizQui.getSettings().setJavaScriptEnabled(true);
                 webViewQuizQui.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-                webViewQuizQui.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=8");
+                webViewQuizQui.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=6");
                 btnQui.setVisibility(View.GONE);
             }
         });

@@ -116,7 +116,8 @@
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignLeft="@+id/textView5"
         android:layout_alignStart="@+id/textView5"
-        android:id="@+id/textView6" />
+        android:id="@+id/textView6"
+        android:textColor="@color/cast_intro_overlay_background_color" />
 
     <TextView
         android:text="Telefone:"
@@ -125,7 +126,8 @@
         android:layout_alignBottom="@+id/imageView3"
         android:layout_alignLeft="@+id/textView6"
         android:layout_alignStart="@+id/textView6"
-        android:id="@+id/textView7" />
+        android:id="@+id/textView7"
+        android:textColor="@color/cast_intro_overlay_background_color" />
 
     <TextView
         android:text="Destino:"
@@ -134,7 +136,8 @@
         android:layout_alignBottom="@+id/imageView4"
         android:layout_alignLeft="@+id/textView7"
         android:layout_alignStart="@+id/textView7"
-        android:id="@+id/textView8" />
+        android:id="@+id/textView8"
+        android:textColor="@color/cast_intro_overlay_background_color" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -162,16 +165,8 @@
         android:id="@+id/textView5"
         android:layout_alignBottom="@+id/imageView"
         android:layout_toLeftOf="@+id/passeio"
-        android:layout_toStartOf="@+id/passeio" />
-
-    <TextView
-        android:text="Local de Saída:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5" />
+        android:layout_toStartOf="@+id/passeio"
+        android:textColor="@color/cast_intro_overlay_background_color" />
 
     <TextView
         android:text="Sede Portal Educando"
@@ -181,17 +176,8 @@
         android:layout_alignBaseline="@+id/textView4"
         android:layout_alignBottom="@+id/textView4"
         android:layout_alignLeft="@+id/imgBtnMaps2"
-        android:layout_alignStart="@+id/imgBtnMaps2" />
-
-    <TextView
-        android:text="11/12/2016"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_toRightOf="@+id/textView5"
-        android:layout_toEndOf="@+id/textView5" />
+        android:layout_alignStart="@+id/imgBtnMaps2"
+        android:textColor="@color/cast_intro_overlay_background_color" />
 
     <TextView
         android:text="Saída às 08:00 e volta às 17:00"
@@ -200,7 +186,8 @@
         android:layout_alignTop="@+id/textView6"
         android:layout_alignLeft="@+id/textMaps1"
         android:layout_alignStart="@+id/textMaps1"
-        android:id="@+id/textView9" />
+        android:id="@+id/textView9"
+        android:textColor="@color/cast_intro_overlay_background_color" />
 
     <TextView
         android:text="Moura ( R. Diário de Pernambuco, 195)"
@@ -210,6 +197,28 @@
         android:layout_alignBaseline="@+id/textView8"
         android:layout_alignBottom="@+id/textView8"
         android:layout_alignLeft="@+id/textView9"
-        android:layout_alignStart="@+id/textView9" />
+        android:layout_alignStart="@+id/textView9"
+        android:textColor="@color/cast_intro_overlay_background_color" />
+
+    <TextView
+        android:text="Local de Saída:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:textColor="@color/cast_intro_overlay_background_color" />
+
+    <TextView
+        android:text="11/12/2016"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
 
 </RelativeLayout>

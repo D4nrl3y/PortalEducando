@@ -31,7 +31,7 @@ public class PerguntasBiologia extends AppCompatActivity {
                 webViewQuizBio.getSettings().setLoadsImagesAutomatically(true);
                 webViewQuizBio.getSettings().setJavaScriptEnabled(true);
                 webViewQuizBio.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-                webViewQuizBio.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=8");
+                webViewQuizBio.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=2");
                 btnBio.setVisibility(View.GONE);
             }
         });

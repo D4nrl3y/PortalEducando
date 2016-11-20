@@ -31,7 +31,7 @@ public class PerguntasHistoria extends AppCompatActivity {
                 webViewQuizHis.getSettings().setLoadsImagesAutomatically(true);
                 webViewQuizHis.getSettings().setJavaScriptEnabled(true);
                 webViewQuizHis.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-                webViewQuizHis.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=8");
+                webViewQuizHis.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=10");
                 btnHis.setVisibility(View.GONE);
             }
         });

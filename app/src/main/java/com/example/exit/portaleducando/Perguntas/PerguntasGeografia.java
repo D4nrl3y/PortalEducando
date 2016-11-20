@@ -33,7 +33,7 @@ public class PerguntasGeografia extends AppCompatActivity {
                 webViewQuizGeo.getSettings().setLoadsImagesAutomatically(true);
                 webViewQuizGeo.getSettings().setJavaScriptEnabled(true);
                 webViewQuizGeo.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-                webViewQuizGeo.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=8");
+                webViewQuizGeo.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=1");
                 btnGeo.setVisibility(View.GONE);
             }
         });

@@ -35,7 +35,7 @@ public class PerguntasPortugues extends AppCompatActivity {
                 webViewQuizPort.getSettings().setLoadsImagesAutomatically(true);
                 webViewQuizPort.getSettings().setJavaScriptEnabled(true);
                 webViewQuizPort.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-                webViewQuizPort.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=8");
+                webViewQuizPort.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=7");
                 btnPort.setVisibility(View.GONE);
             }
         });

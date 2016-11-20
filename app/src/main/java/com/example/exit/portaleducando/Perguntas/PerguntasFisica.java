@@ -32,7 +32,7 @@ public class PerguntasFisica extends AppCompatActivity {
                 webViewQuizFis.getSettings().setLoadsImagesAutomatically(true);
                 webViewQuizFis.getSettings().setJavaScriptEnabled(true);
                 webViewQuizFis.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-                webViewQuizFis.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=8");
+                webViewQuizFis.loadUrl("http://192.168.0.106:8080/PortalEducando/quiz/questionario.jsp?id=3");
                 btnFis.setVisibility(View.GONE);
             }
         });

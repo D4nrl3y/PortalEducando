@@ -86,13 +86,13 @@ public class AjudaActivity extends AppCompatActivity {
         auxiliar = new ArrayList<String>();
         auxiliar.add("1 -Caso suas notas não esteja aparecendo no Diario de Classe: \n" +
                 "Passo 1: Entrar em Contato com o Setor Administrativo da sua Escola");
-        auxiliar.add("2 -Quando quando acesso o Diario de Classe o Programa fecha sozinho: \n" +
+        auxiliar.add("2 -Quando acesso o Diario de Classe o Programa fecha sozinho: \n" +
                 "Favor Entrar em contato com a equipe de suporte. \n" +
                 "Email: portaeducando@gmail.com");
         listData.put(listGroup.get(1),auxiliar);
 
         auxiliar = new ArrayList<String>();
-        auxiliar.add("Problemas com o Acompanhamento ModelNutricional:  " +
+        auxiliar.add("Problemas com o Acompanhamento Nutricional:  " +
                 "Favor Entrar em contato com a equipe de suporte. \n" +
                 "Email: portaeducando@gmail.com");
         listData.put(listGroup.get(2),auxiliar);
